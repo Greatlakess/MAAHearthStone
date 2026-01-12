@@ -3,27 +3,107 @@
     "$__mpe_code": {
       "filePath": "G:\\github_File\\MAAHearthStone\\assets\\resource\\pipeline\\my_task.json",
       "filename": "新建Pipeline3",
-      "lastSyncTime": 1768221507707,
+      "lastSyncTime": 1768216835461,
       "prefix": "",
       "savedViewport": {
-        "x": 327,
-        "y": 101,
-        "zoom": 0.57
+        "x": -824,
+        "y": 206,
+        "zoom": 0.76
       },
       "version": "v0.15.2"
+    }
+  },
+  "买一星怪": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1501,
+        "y": -278
+      }
+    },
+    "action": {
+      "param": {
+        "begin": true,
+        "begin_offset": [
+          0,
+          100,
+          0,
+          0
+        ],
+        "end": [
+          [
+            642,
+            659,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "出一星怪"
+    ],
+    "recognition": {
+      "param": {
+        "roi": [
+          268,
+          183,
+          801,
+          70
+        ],
+        "template": [
+          "1星.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "出一星怪": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1793,
+        "y": -232
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          617,
+          659,
+          0,
+          0
+        ],
+        "end": [
+          [
+            636,
+            397,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
     }
   },
   "战斗中": {
     "$__mpe_code": {
       "position": {
-        "x": 1200,
-        "y": 359
+        "x": 1808,
+        "y": -40
       }
     },
     "action": {
       "param": {},
       "type": "DoNothing"
     },
+    "next": [
+      "进入对局",
+      "战斗中"
+    ],
     "post_delay": 10000,
     "recognition": {
       "param": {
@@ -37,8 +117,8 @@
   "搜寻对手": {
     "$__mpe_code": {
       "position": {
-        "x": 600,
-        "y": 542
+        "x": 895,
+        "y": 22
       }
     },
     "action": {
@@ -46,8 +126,7 @@
       "type": "DoNothing"
     },
     "next": [
-      "进入对局",
-      "搜寻对手"
+      "进入对局"
     ],
     "post_delay": 60000,
     "recognition": {
@@ -63,8 +142,8 @@
   "时光酒馆": {
     "$__mpe_code": {
       "position": {
-        "x": 900,
-        "y": 139
+        "x": 1749,
+        "y": 532
       }
     },
     "action": {
@@ -83,31 +162,11 @@
       "type": "TemplateMatch"
     }
   },
-  "游戏结束": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1200,
-        "y": 605
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "recognition": {
-      "param": {
-        "template": [
-          "游戏结束.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
   "点击酒馆开始": {
     "$__mpe_code": {
       "position": {
-        "x": 300,
-        "y": 585
+        "x": 600,
+        "y": 61
       }
     },
     "action": {
@@ -115,6 +174,7 @@
       "type": "Click"
     },
     "next": [
+      "状态机1",
       "搜寻对手"
     ],
     "recognition": {
@@ -129,14 +189,17 @@
   "点击酒馆战棋": {
     "$__mpe_code": {
       "position": {
-        "x": 300,
-        "y": 0
+        "x": 0,
+        "y": 45
       }
     },
     "action": {
       "param": {},
       "type": "Click"
     },
+    "next": [
+      "状态机1"
+    ],
     "recognition": {
       "param": {
         "roi": [
@@ -155,8 +218,8 @@
   "点升级": {
     "$__mpe_code": {
       "position": {
-        "x": 2400,
-        "y": 110
+        "x": 2706,
+        "y": 238
       }
     },
     "action": {
@@ -170,6 +233,11 @@
       },
       "type": "Click"
     },
+    "next": [
+      "进入对局",
+      "战斗中",
+      "时光酒馆"
+    ],
     "post_delay": 4000,
     "recognition": {
       "param": {},
@@ -179,8 +247,8 @@
   "状态机1": {
     "$__mpe_code": {
       "position": {
-        "x": 0,
-        "y": 33
+        "x": 300,
+        "y": 78
       }
     },
     "action": {
@@ -188,52 +256,13 @@
       "type": "DoNothing"
     },
     "next": [
-      {
-        "jump_back": true,
-        "name": "点击酒馆战棋"
-      },
-      {
-        "jump_back": true,
-        "name": "进游戏点击开始"
-      },
-      {
-        "jump_back": true,
-        "name": "点击酒馆开始"
-      },
-      {
-        "jump_back": true,
-        "name": "搜寻对手"
-      },
-      {
-        "jump_back": true,
-        "name": "进入对局"
-      },
-      {
-        "jump_back": true,
-        "name": "战斗中"
-      },
-      {
-        "jump_back": true,
-        "name": "时光酒馆"
-      },
-      {
-        "jump_back": true,
-        "name": "游戏结束"
-      },
-      {
-        "jump_back": true,
-        "name": "进行选择"
-      },
-      {
-        "jump_back": true,
-        "name": "重新连接"
-      }
-    ],
-    "on_error": [
-      {
-        "jump_back": true,
-        "name": "重启游戏"
-      }
+      "点击酒馆战棋",
+      "进游戏点击开始",
+      "点击酒馆开始",
+      "进入对局",
+      "搜寻对手",
+      "时光酒馆",
+      "战斗中"
     ],
     "recognition": {
       "param": {},
@@ -243,8 +272,8 @@
   "进入对局": {
     "$__mpe_code": {
       "position": {
-        "x": 900,
-        "y": 557
+        "x": 1213,
+        "y": 62
       }
     },
     "action": {
@@ -252,10 +281,9 @@
       "type": "Click"
     },
     "next": [
-      "游戏结束",
-      "战斗中",
       "随机买",
-      "进行选择"
+      "战斗中",
+      "时光酒馆"
     ],
     "recognition": {
       "param": {
@@ -270,14 +298,17 @@
   "进游戏点击开始": {
     "$__mpe_code": {
       "position": {
-        "x": 300,
-        "y": 280
+        "x": 600,
+        "y": 253
       }
     },
     "action": {
       "param": {},
       "type": "Click"
     },
+    "next": [
+      "状态机1"
+    ],
     "recognition": {
       "param": {
         "template": [
@@ -287,97 +318,11 @@
       "type": "TemplateMatch"
     }
   },
-  "进行选择": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1200,
-        "y": 797
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          640,
-          365,
-          0,
-          0
-        ]
-      },
-      "type": "Click"
-    },
-    "recognition": {
-      "param": {
-        "template": [
-          "进行选择.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "重启游戏": {
-    "$__mpe_code": {
-      "position": {
-        "x": 292,
-        "y": 1001
-      }
-    },
-    "action": {
-      "param": {
-        "package": "com.blizzard.wtcg.hearthstone"
-      },
-      "type": "StopApp"
-    },
-    "next": [
-      "重启游戏2"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "重启游戏2": {
-    "$__mpe_code": {
-      "position": {
-        "x": 552,
-        "y": 1001
-      }
-    },
-    "action": {
-      "param": {
-        "package": "com.blizzard.wtcg.hearthstone"
-      },
-      "type": "StartApp"
-    },
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "重新连接": {
-    "$__mpe_code": {
-      "position": {
-        "x": 296,
-        "y": 806
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "recognition": {
-      "param": {
-        "template": [
-          "重新连接.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
   "随机上": {
     "$__mpe_code": {
       "position": {
-        "x": 1800,
-        "y": 125
+        "x": 2070,
+        "y": 252
       }
     },
     "action": {
@@ -410,8 +355,8 @@
   "随机上2": {
     "$__mpe_code": {
       "position": {
-        "x": 2100,
-        "y": 125
+        "x": 2360,
+        "y": 259
       }
     },
     "action": {
@@ -434,7 +379,9 @@
       "type": "Swipe"
     },
     "next": [
-      "点升级"
+      "点升级",
+      "战斗中",
+      "时光酒馆"
     ],
     "recognition": {
       "param": {},
@@ -444,8 +391,8 @@
   "随机买": {
     "$__mpe_code": {
       "position": {
-        "x": 1200,
-        "y": 109
+        "x": 1476,
+        "y": 227
       }
     },
     "action": {
@@ -468,23 +415,20 @@
       "type": "Swipe"
     },
     "next": [
+      "战斗中",
+      "时光酒馆",
       "随机买2"
     ],
     "recognition": {
-      "param": {
-        "template": [
-          "鲍勃.png",
-          "时光龙.png"
-        ]
-      },
-      "type": "TemplateMatch"
+      "param": {},
+      "type": "DirectHit"
     }
   },
   "随机买2": {
     "$__mpe_code": {
       "position": {
-        "x": 1500,
-        "y": 125
+        "x": 1765,
+        "y": 249
       }
     },
     "action": {
