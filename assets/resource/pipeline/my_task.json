@@ -1,11 +1,82 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {},
-    "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
-        "action": "Custom",
-        "custom_action": "my_action_111"
+  "$__mpe_config_新建Pipeline3": {
+    "$__mpe_code": {
+      "filePath": "G:\\github_File\\MAAHearthStone\\assets\\resource\\pipeline\\my_task.json",
+      "filename": "新建Pipeline3",
+      "lastSyncTime": 1768210077921,
+      "prefix": "",
+      "savedViewport": {
+        "x": 764,
+        "y": 256,
+        "zoom": 1
+      },
+      "version": "v0.15.2"
     }
+  },
+  "MyTask1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 300,
+        "y": 224
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "recognition": {
+      "param": {
+        "template": [
+          "点击开始.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新建节点1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "recognition": {
+      "param": {
+        "roi": [
+          559,
+          248,
+          159,
+          40
+        ],
+        "template": [
+          "酒馆战棋.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "状态机1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 0,
+        "y": 33
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "next": [
+      "新建节点1",
+      "MyTask1"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  }
 }
