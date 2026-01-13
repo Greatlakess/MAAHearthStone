@@ -3,26 +3,276 @@
     "$__mpe_code": {
       "filePath": "G:\\github_File\\MAAHearthStone\\assets\\resource\\pipeline\\my_task.json",
       "filename": "新建Pipeline3",
-      "lastSyncTime": 1768221507707,
+      "lastSyncTime": 1768291892484,
       "prefix": "",
       "savedViewport": {
-        "x": 327,
-        "y": 101,
-        "zoom": 0.57
+        "x": 174,
+        "y": -463,
+        "zoom": 0.5
       },
       "version": "v0.15.2"
     }
   },
-  "战斗中": {
+  "1级酒馆": {
     "$__mpe_code": {
       "position": {
-        "x": 1200,
-        "y": 359
+        "x": 2285,
+        "y": 848
       }
     },
     "action": {
       "param": {},
       "type": "DoNothing"
+    },
+    "recognition": {
+      "param": {
+        "roi": [
+          564,
+          130,
+          51,
+          44
+        ],
+        "template": [
+          "酒馆1星.png"
+        ],
+        "threshold": [
+          0.85
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 5000
+  },
+  "买法术": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1856,
+        "y": 304
+      }
+    },
+    "action": {
+      "param": {
+        "end": [
+          [
+            642,
+            675,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Succeeded": "买一个法术"
+    },
+    "next": [
+      "没钱了_副本23",
+      "刷新"
+    ],
+    "pre_delay": 1000,
+    "recognition": {
+      "param": {
+        "roi": [
+          686,
+          214,
+          283,
+          106
+        ],
+        "template": [
+          "法术/强固.png",
+          "法术/箭头.png",
+          "法术/香蕉.png",
+          "法术/浏览.png",
+          "法术/活力.png",
+          "法术/变异.png",
+          "法术/戒指.png",
+          "法术/裤子.png",
+          "法术/龟甲.png",
+          "法术/投资.png",
+          "法术/茶壶.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 3000
+  },
+  "优先升级": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2869,
+        "y": 1152
+      }
+    },
+    "action": {
+      "param": {
+        "target": [
+          526,
+          140,
+          0,
+          0
+        ]
+      },
+      "type": "TouchDown"
+    },
+    "next": [
+      "新建节点11"
+    ],
+    "post_delay": 0,
+    "pre_delay": 0,
+    "recognition": {
+      "param": {
+        "template": [
+          "升级.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "优先升级_副本25": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4291,
+        "y": 574
+      }
+    },
+    "action": {
+      "param": {
+        "target": [
+          526,
+          140,
+          0,
+          0
+        ]
+      },
+      "type": "TouchDown"
+    },
+    "next": [
+      "新建节点11_副本26"
+    ],
+    "post_delay": 0,
+    "pre_delay": 0,
+    "recognition": {
+      "param": {
+        "template": [
+          "升级.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "刷新": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1867,
+        "y": 48
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "买法术",
+      "没钱了_副本23",
+      "刷新"
+    ],
+    "post_delay": 1500,
+    "recognition": {
+      "param": {
+        "roi": [
+          705,
+          86,
+          92,
+          101
+        ],
+        "template": [
+          "刷新.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 3000
+  },
+  "卖一个随从": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2980,
+        "y": 43
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          919,
+          392,
+          0,
+          0
+        ],
+        "end": [
+          [
+            637,
+            131,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "随机上_副本3_副本1"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "四费回合": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2293,
+        "y": 1161
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Action.Starting": "四费的回合"
+    },
+    "next": [
+      "点升级_副本1"
+    ],
+    "recognition": {
+      "param": {
+        "expected": [
+          "4/4"
+        ],
+        "roi": [
+          819,
+          657,
+          42,
+          20
+        ]
+      },
+      "type": "OCR"
+    }
+  },
+  "战斗中": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1887,
+        "y": 861
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "不是我的回合"
     },
     "post_delay": 10000,
     "recognition": {
@@ -38,18 +288,22 @@
     "$__mpe_code": {
       "position": {
         "x": 600,
-        "y": 542
+        "y": 1071
       }
     },
     "action": {
       "param": {},
       "type": "DoNothing"
     },
+    "focus": {
+      "Node.Action.Starting": "开始匹配"
+    },
     "next": [
       "进入对局",
-      "搜寻对手"
+      "搜寻对手",
+      "选择英雄"
     ],
-    "post_delay": 60000,
+    "rate_limit": 3000,
     "recognition": {
       "param": {
         "template": [
@@ -58,18 +312,309 @@
       },
       "type": "TemplateMatch"
     },
-    "timeout": 20000
+    "timeout": 200000
+  },
+  "新建节点11": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3182,
+        "y": 1192
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "TouchUp"
+    },
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "新建节点11_副本26": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4579,
+        "y": 786
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "TouchUp"
+    },
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "新建节点13": {
+    "$__mpe_code": {
+      "position": {
+        "x": 628,
+        "y": 1574
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "recognition": {
+      "param": {
+        "expected": [
+          "确"
+        ]
+      },
+      "type": "OCR"
+    }
+  },
+  "新建节点5": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4741,
+        "y": 598
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "recognition": {
+      "param": {
+        "expected": [
+          "元素"
+        ],
+        "roi": [
+          513,
+          109,
+          259,
+          28
+        ]
+      },
+      "type": "OCR"
+    }
+  },
+  "新建节点6": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1499,
+        "y": 1808
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "recognition": {
+      "param": {
+        "expected": [
+          "确"
+        ],
+        "roi": [
+          423,
+          364,
+          438,
+          325
+        ]
+      },
+      "type": "OCR"
+    }
+  },
+  "新点抉择": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3622,
+        "y": 552
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "点升级"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新点抉择_副本16": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2964,
+        "y": 297
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "随机上_副本3_副本13_副本15"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新点抉择_副本17": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3481,
+        "y": 284
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "随机上2_副本4_副本14_副本16"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新点抉择_副本18": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3965,
+        "y": 297
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "随机上_副本3_副本13_副本17"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新点抉择_副本19": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4580,
+        "y": 285
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "随机上2_副本4_副本14_副本18"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新点抉择_副本20": {
+    "$__mpe_code": {
+      "position": {
+        "x": 5290,
+        "y": 300
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "随机上_副本3_副本13_副本15_副本19"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新点抉择_副本20_副本21": {
+    "$__mpe_code": {
+      "position": {
+        "x": 5934,
+        "y": 306
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "随机上2_副本4_副本14_副本16_副本20"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "新点抉择_副本20_副本21_副本22": {
+    "$__mpe_code": {
+      "position": {
+        "x": 6487,
+        "y": 278
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "点升级_副本24"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
   },
   "时光酒馆": {
     "$__mpe_code": {
       "position": {
-        "x": 900,
-        "y": 139
+        "x": 1209,
+        "y": -131
       }
     },
     "action": {
       "param": {},
       "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Action.Starting": "时光酒馆回合"
     },
     "next": [
       "随机买"
@@ -83,16 +628,94 @@
       "type": "TemplateMatch"
     }
   },
+  "没钱了": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2235,
+        "y": -418
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "next": [
+      "随机上_副本3_副本13"
+    ],
+    "recognition": {
+      "param": {
+        "expected": [
+          "0"
+        ],
+        "only_rec": true,
+        "roi": [
+          819,
+          660,
+          21,
+          15
+        ]
+      },
+      "type": "OCR"
+    },
+    "timeout": 3000
+  },
+  "没钱了_副本23": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2178,
+        "y": 127
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "没钱了"
+    },
+    "inverse": true,
+    "next": [
+      "随机上_副本3_副本13"
+    ],
+    "recognition": {
+      "param": {
+        "expected": [
+          "10",
+          "9",
+          "8",
+          "7",
+          "6",
+          "5",
+          "4",
+          "3",
+          "2",
+          "1"
+        ],
+        "only_rec": true,
+        "roi": [
+          819,
+          660,
+          21,
+          15
+        ]
+      },
+      "type": "OCR"
+    },
+    "timeout": 3000
+  },
   "游戏结束": {
     "$__mpe_code": {
       "position": {
-        "x": 1200,
-        "y": 605
+        "x": 1505,
+        "y": 1244
       }
     },
     "action": {
       "param": {},
       "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "完成1局"
     },
     "recognition": {
       "param": {
@@ -107,12 +730,15 @@
     "$__mpe_code": {
       "position": {
         "x": 300,
-        "y": 585
+        "y": 1097
       }
     },
     "action": {
       "param": {},
       "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "点击开始匹配"
     },
     "next": [
       "搜寻对手"
@@ -130,12 +756,15 @@
     "$__mpe_code": {
       "position": {
         "x": 300,
-        "y": 0
+        "y": 141
       }
     },
     "action": {
       "param": {},
       "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "点击酒馆战棋"
     },
     "recognition": {
       "param": {
@@ -155,39 +784,166 @@
   "点升级": {
     "$__mpe_code": {
       "position": {
-        "x": 2400,
-        "y": 110
+        "x": 4007,
+        "y": 528
       }
     },
     "action": {
       "param": {
         "target": [
           528,
-          139,
+          137,
           0,
           0
         ]
       },
       "type": "Click"
     },
-    "post_delay": 4000,
+    "focus": {
+      "Node.Action.Starting": "尝试升级"
+    },
+    "next": [
+      "优先升级_副本25"
+    ],
     "recognition": {
       "param": {},
       "type": "DirectHit"
+    }
+  },
+  "点升级_副本1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2581,
+        "y": 1172
+      }
+    },
+    "action": {
+      "param": {
+        "target": [
+          528,
+          137,
+          0,
+          0
+        ]
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "尝试升级"
+    },
+    "next": [
+      "优先升级"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "点升级_副本2": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3623,
+        "y": 1389
+      }
+    },
+    "action": {
+      "param": {
+        "target": [
+          558,
+          157,
+          0,
+          0
+        ]
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "尝试升级"
+    },
+    "next": [
+      "随机买_副本5_副本2"
+    ],
+    "post_delay": 3000,
+    "pre_delay": 1000,
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "repeat": 3
+  },
+  "点升级_副本24": {
+    "$__mpe_code": {
+      "position": {
+        "x": 6801,
+        "y": 251
+      }
+    },
+    "action": {
+      "param": {
+        "target": [
+          528,
+          137,
+          0,
+          0
+        ]
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "尝试升级"
+    },
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "点抉择": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2963,
+        "y": 534
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "随机上2_副本4"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "抉择的0.png"
+        ]
+      },
+      "type": "TemplateMatch"
     }
   },
   "状态机1": {
     "$__mpe_code": {
       "position": {
         "x": 0,
-        "y": 33
+        "y": 27
       }
     },
     "action": {
       "param": {},
       "type": "DoNothing"
     },
+    "focus": {
+      "Node.Action.Starting": "识别状态中",
+      "Node.Recognition.Starting": "程序开始"
+    },
     "next": [
+      {
+        "jump_back": true,
+        "name": "等级奖励"
+      },
+      {
+        "jump_back": true,
+        "name": "错误发生"
+      },
       {
         "jump_back": true,
         "name": "点击酒馆战棋"
@@ -227,6 +983,10 @@
       {
         "jump_back": true,
         "name": "重新连接"
+      },
+      {
+        "jump_back": true,
+        "name": "选择英雄"
       }
     ],
     "on_error": [
@@ -240,22 +1000,53 @@
       "type": "DirectHit"
     }
   },
-  "进入对局": {
+  "等级奖励": {
     "$__mpe_code": {
       "position": {
-        "x": 900,
-        "y": 557
+        "x": 311,
+        "y": 1358
       }
     },
     "action": {
       "param": {},
       "type": "Click"
     },
+    "recognition": {
+      "param": {
+        "expected": [
+          "等级"
+        ],
+        "roi": [
+          434,
+          61,
+          154,
+          78
+        ]
+      },
+      "type": "OCR"
+    }
+  },
+  "进入对局": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1234,
+        "y": 967
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Action.Starting": "我的回合"
+    },
     "next": [
+      "四费回合",
       "游戏结束",
-      "战斗中",
-      "随机买",
-      "进行选择"
+      "进行选择",
+      "随从没满",
+      "随从满了",
+      "战斗中"
     ],
     "recognition": {
       "param": {
@@ -271,13 +1062,17 @@
     "$__mpe_code": {
       "position": {
         "x": 300,
-        "y": 280
+        "y": 380
       }
     },
     "action": {
       "param": {},
       "type": "Click"
     },
+    "focus": {
+      "Node.Action.Starting": "点击开始游戏"
+    },
+    "post_delay": 5000,
     "recognition": {
       "param": {
         "template": [
@@ -290,8 +1085,8 @@
   "进行选择": {
     "$__mpe_code": {
       "position": {
-        "x": 1200,
-        "y": 797
+        "x": 1514,
+        "y": 1529
       }
     },
     "action": {
@@ -305,6 +1100,9 @@
       },
       "type": "Click"
     },
+    "focus": {
+      "Node.Action.Starting": "进行选择"
+    },
     "recognition": {
       "param": {
         "template": [
@@ -314,11 +1112,90 @@
       "type": "TemplateMatch"
     }
   },
+  "选择强力英雄": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1213,
+        "y": 1801
+      }
+    },
+    "action": {
+      "param": {
+        "target_offset": [
+          0,
+          -100,
+          0,
+          0
+        ]
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Succeeded": "选择强力英雄！"
+    },
+    "next": [
+      "新建节点6",
+      "进入对局"
+    ],
+    "recognition": {
+      "param": {
+        "expected": [
+          "萨鲁法尔大王",
+          "恩佐斯",
+          "伊利丹",
+          "斯尼德",
+          "帕奇维克",
+          "厄祖",
+          "拉卡",
+          "馆长",
+          "雷矛",
+          "奥拉基尔",
+          "德雷克塔尔"
+        ],
+        "roi": [
+          444,
+          377,
+          409,
+          84
+        ]
+      },
+      "type": "OCR"
+    },
+    "timeout": 20000
+  },
+  "选择英雄": {
+    "$__mpe_code": {
+      "position": {
+        "x": 900,
+        "y": 1093
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "进入对局",
+      {
+        "jump_back": true,
+        "name": "选择强力英雄"
+      }
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "选择一个英雄.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
   "重启游戏": {
     "$__mpe_code": {
       "position": {
-        "x": 292,
-        "y": 1001
+        "x": 300,
+        "y": 830
       }
     },
     "action": {
@@ -327,9 +1204,13 @@
       },
       "type": "StopApp"
     },
+    "focus": {
+      "Node.Action.Starting": "开始重启游戏"
+    },
     "next": [
       "重启游戏2"
     ],
+    "post_delay": 2000,
     "recognition": {
       "param": {},
       "type": "DirectHit"
@@ -338,8 +1219,8 @@
   "重启游戏2": {
     "$__mpe_code": {
       "position": {
-        "x": 552,
-        "y": 1001
+        "x": 600,
+        "y": 816
       }
     },
     "action": {
@@ -348,6 +1229,10 @@
       },
       "type": "StartApp"
     },
+    "focus": {
+      "Node.Action.Starting": "重启游戏中"
+    },
+    "post_delay": 10000,
     "recognition": {
       "param": {},
       "type": "DirectHit"
@@ -356,14 +1241,18 @@
   "重新连接": {
     "$__mpe_code": {
       "position": {
-        "x": 296,
-        "y": 806
+        "x": 300,
+        "y": 591
       }
     },
     "action": {
       "param": {},
       "type": "Click"
     },
+    "focus": {
+      "Node.Action.Starting": "重新连接中"
+    },
+    "post_delay": 1000,
     "recognition": {
       "param": {
         "template": [
@@ -373,11 +1262,133 @@
       "type": "TemplateMatch"
     }
   },
+  "错误发生": {
+    "$__mpe_code": {
+      "position": {
+        "x": 317,
+        "y": 1579
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "next": [
+      "新建节点13"
+    ],
+    "recognition": {
+      "param": {
+        "expected": [
+          "发生错误"
+        ]
+      },
+      "type": "OCR"
+    }
+  },
+  "随从没满": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1553,
+        "y": 502
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "检测到随从没满"
+    },
+    "next": [
+      "随机买_副本5"
+    ],
+    "recognition": {
+      "param": {
+        "roi": [
+          872,
+          333,
+          93,
+          116
+        ],
+        "template": [
+          "第七个随从格子.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "随从满了": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1541,
+        "y": 192
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "检测到随从满了"
+    },
+    "inverse": true,
+    "next": [
+      "买法术",
+      "刷新"
+    ],
+    "on_error": [
+      "状态机1"
+    ],
+    "recognition": {
+      "param": {
+        "roi": [
+          872,
+          333,
+          93,
+          116
+        ],
+        "template": [
+          "第七个随从格子.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 5000
+  },
+  "随从满了，且手牌还有随从": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2726,
+        "y": 52
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "卖一个随从"
+    ],
+    "recognition": {
+      "param": {
+        "expected": [
+          "更多"
+        ],
+        "roi": [
+          638,
+          303,
+          57,
+          32
+        ]
+      },
+      "type": "OCR"
+    }
+  },
   "随机上": {
     "$__mpe_code": {
       "position": {
-        "x": 1800,
-        "y": 125
+        "x": 2109,
+        "y": -145
       }
     },
     "action": {
@@ -399,6 +1410,9 @@
       },
       "type": "Swipe"
     },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
     "next": [
       "随机上2"
     ],
@@ -410,8 +1424,8 @@
   "随机上2": {
     "$__mpe_code": {
       "position": {
-        "x": 2100,
-        "y": 125
+        "x": 2409,
+        "y": -119
       }
     },
     "action": {
@@ -433,39 +1447,552 @@
       },
       "type": "Swipe"
     },
-    "next": [
-      "点升级"
-    ],
     "recognition": {
       "param": {},
       "type": "DirectHit"
     }
   },
-  "随机买": {
+  "随机上2_副本4": {
     "$__mpe_code": {
       "position": {
-        "x": 1200,
-        "y": 109
+        "x": 3297,
+        "y": 543
       }
     },
     "action": {
       "param": {
         "begin": [
-          593,
-          266,
+          634,
+          662,
           0,
           0
         ],
         "end": [
           [
-            642,
-            659,
+            588,
+            397,
             0,
             0
           ]
         ]
       },
       "type": "Swipe"
+    },
+    "next": [
+      "新点抉择",
+      "点升级"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上2_副本4_副本14": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2703,
+        "y": 252
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          628,
+          659,
+          0,
+          0
+        ],
+        "end": [
+          [
+            643,
+            392,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "新点抉择_副本16",
+      "随机上_副本3_副本13_副本15"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上2_副本4_副本14_副本16": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3720,
+        "y": 267
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          686,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            452,
+            392,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "新点抉择_副本18",
+      "随机上_副本3_副本13_副本17"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上2_副本4_副本14_副本16_副本20": {
+    "$__mpe_code": {
+      "position": {
+        "x": 6196,
+        "y": 270
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          808,
+          691,
+          0,
+          0
+        ],
+        "end": [
+          [
+            458,
+            392,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "新点抉择_副本20_副本21_副本22"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上2_副本4_副本14_副本18": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4978,
+        "y": 266
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          769,
+          678,
+          0,
+          0
+        ],
+        "end": [
+          [
+            452,
+            389,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "新点抉择_副本20",
+      "随机上_副本3_副本13_副本15_副本19"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上2_副本4_副本3": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3734,
+        "y": 1146
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          634,
+          662,
+          0,
+          0
+        ],
+        "end": [
+          [
+            639,
+            411,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "随机上2_副本4_副本3_副本12"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "随机上2_副本4_副本3_副本12": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4075,
+        "y": 1157
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          688,
+          670,
+          0,
+          0
+        ],
+        "end": [
+          [
+            605,
+            397,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "随机上2_副本4_副本3_副本13"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "随机上2_副本4_副本3_副本13": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4348,
+        "y": 1148
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          544,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            590,
+            410,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "随机上_副本3": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2661,
+        "y": 487
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          623,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            610,
+            392,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      "点抉择",
+      "随机上2_副本4"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上_副本3_副本1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3314,
+        "y": -19
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          623,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            913,
+            392,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "post_delay": 2000,
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "随机上_副本3_副本13": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2452,
+        "y": 158
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          623,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            634,
+            396,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      {
+        "jump_back": true,
+        "name": "随从满了，且手牌还有随从"
+      }
+    ],
+    "on_error": [
+      "随机上2_副本4_副本14"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上_副本3_副本13_副本15": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3238,
+        "y": 240
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          569,
+          667,
+          0,
+          0
+        ],
+        "end": [
+          [
+            553,
+            399,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      "新点抉择_副本17",
+      "随机上2_副本4_副本14_副本16"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上_副本3_副本13_副本15_副本19": {
+    "$__mpe_code": {
+      "position": {
+        "x": 5608,
+        "y": 250
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          458,
+          684,
+          0,
+          0
+        ],
+        "end": [
+          [
+            356,
+            402,
+            2,
+            3
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      "新点抉择_副本20_副本21",
+      "随机上2_副本4_副本14_副本16_副本20"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机上_副本3_副本13_副本17": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4254,
+        "y": 263
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          521,
+          667,
+          0,
+          0
+        ],
+        "end": [
+          [
+            364,
+            392,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      "新点抉择_副本19",
+      "随机上2_副本4_副本14_副本18"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 2000
+  },
+  "随机买": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1509,
+        "y": -158
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          553,
+          270,
+          0,
+          0
+        ],
+        "end": [
+          [
+            643,
+            554,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机买随从"
     },
     "next": [
       "随机买2"
@@ -483,8 +2010,42 @@
   "随机买2": {
     "$__mpe_code": {
       "position": {
-        "x": 1500,
-        "y": 125
+        "x": 1809,
+        "y": -119
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          640,
+          266,
+          0,
+          0
+        ],
+        "end": [
+          [
+            637,
+            548,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "next": [
+      "随机上"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "随机买2_副本6": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2394,
+        "y": 514
       }
     },
     "action": {
@@ -507,11 +2068,95 @@
       "type": "Swipe"
     },
     "next": [
-      "随机上"
+      "随机上_副本3"
     ],
     "recognition": {
       "param": {},
       "type": "DirectHit"
+    }
+  },
+  "随机买_副本5": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2110,
+        "y": 486
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          593,
+          266,
+          0,
+          0
+        ],
+        "end": [
+          [
+            642,
+            659,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机买随从"
+    },
+    "next": [
+      "随机买2_副本6"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "鲍勃.png",
+          "时光龙.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "随机买_副本5_副本2": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3739,
+        "y": 932
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          593,
+          266,
+          0,
+          0
+        ],
+        "end": [
+          [
+            642,
+            659,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机买随从"
+    },
+    "next": [
+      "随机上2_副本4_副本3"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "鲍勃.png",
+          "时光龙.png"
+        ]
+      },
+      "type": "TemplateMatch"
     }
   }
 }

@@ -1,0 +1,926 @@
+{
+  "$__mpe_config_新建Pipeline4": {
+    "$__mpe_code": {
+      "filePath": "G:\\github_File\\MAAHearthStone\\assets\\resource\\pipeline\\Pipeline4.json",
+      "filename": "新建Pipeline4",
+      "lastSyncTime": 1768231400516,
+      "prefix": "",
+      "savedViewport": {
+        "x": -2252,
+        "y": 187,
+        "zoom": 0.5
+      },
+      "version": "v0.15.2"
+    }
+  },
+  "法茶战斗中1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1919,
+        "y": 369
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "不是我的回合"
+    },
+    "next": [
+      "法茶点升级"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "战斗中.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 500000
+  },
+  "法茶战斗中2": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2555,
+        "y": 337
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "不是我的回合"
+    },
+    "next": [
+      "法茶第三回合空城卖随从"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "战斗中.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶战斗中2_副本3": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3507,
+        "y": 427
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "不是我的回合"
+    },
+    "next": [
+      "法茶第4回合买一个任意_副本4"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "战斗中.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶战斗中2_副本3_副本9": {
+    "$__mpe_code": {
+      "position": {
+        "x": 5081,
+        "y": 461
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "不是我的回合"
+    },
+    "next": [
+      "法茶点升级_副本2_副本5"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "战斗中.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶战斗中2_副本3_副本9_副本10": {
+    "$__mpe_code": {
+      "position": {
+        "x": 5741,
+        "y": 479
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Recognition.Succeeded": "不是我的回合"
+    },
+    "next": [
+      "法茶时光酒馆_副本11"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "战斗中.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶搜寻对手": {
+    "$__mpe_code": {
+      "position": {
+        "x": 600,
+        "y": 542
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Action.Starting": "开始匹配"
+    },
+    "next": [
+      "法茶进入对局",
+      "法茶搜寻对手",
+      "法茶选择英雄"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "搜寻对手.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶时光酒馆": {
+    "$__mpe_code": {
+      "position": {
+        "x": 918,
+        "y": -101
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Action.Starting": "时光酒馆回合"
+    },
+    "next": [
+      "法茶第一回合买一个一星"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "时光龙.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶时光酒馆_副本11": {
+    "$__mpe_code": {
+      "position": {
+        "x": 6068,
+        "y": 163
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Action.Starting": "时光酒馆回合"
+    },
+    "recognition": {
+      "param": {
+        "template": [
+          "时光龙.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶游戏结束": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1556,
+        "y": 619
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "完成1局"
+    },
+    "recognition": {
+      "param": {
+        "template": [
+          "游戏结束.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶点击酒馆开始": {
+    "$__mpe_code": {
+      "position": {
+        "x": 300,
+        "y": 585
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "点击开始匹配"
+    },
+    "next": [
+      "法茶搜寻对手"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "开始战棋.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶点击酒馆战棋": {
+    "$__mpe_code": {
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "点击酒馆战棋"
+    },
+    "recognition": {
+      "param": {
+        "roi": [
+          559,
+          248,
+          159,
+          40
+        ],
+        "template": [
+          "酒馆战棋.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶点升级": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2241,
+        "y": 60
+      }
+    },
+    "action": {
+      "param": {
+        "target": true
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "尝试升级"
+    },
+    "next": [
+      "法茶战斗中2"
+    ],
+    "pre_delay": 5000,
+    "recognition": {
+      "param": {
+        "template": [
+          "升级.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶点升级_副本2": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3195,
+        "y": 82
+      }
+    },
+    "action": {
+      "param": {
+        "target": true
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "尝试升级"
+    },
+    "next": [
+      "法茶战斗中2_副本3"
+    ],
+    "pre_delay": 5000,
+    "recognition": {
+      "param": {
+        "template": [
+          "升级.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶点升级_副本2_副本5": {
+    "$__mpe_code": {
+      "position": {
+        "x": 5419,
+        "y": 144
+      }
+    },
+    "action": {
+      "param": {
+        "target": true
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "尝试升级"
+    },
+    "next": [
+      "法茶战斗中2_副本3_副本9_副本10"
+    ],
+    "pre_delay": 5000,
+    "recognition": {
+      "param": {
+        "template": [
+          "升级.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶状态机1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 0,
+        "y": 33
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "DoNothing"
+    },
+    "focus": {
+      "Node.Action.Starting": "识别状态中",
+      "Node.Recognition.Starting": "程序开始"
+    },
+    "next": [
+      {
+        "jump_back": true,
+        "name": "法茶点击酒馆战棋"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶进游戏点击开始"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶点击酒馆开始"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶搜寻对手"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶进入对局"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶战斗中1"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶时光酒馆"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶游戏结束"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶进行选择"
+      },
+      {
+        "jump_back": true,
+        "name": "法茶重新连接"
+      }
+    ],
+    "on_error": [
+      {
+        "jump_back": true,
+        "name": "法茶重启游戏"
+      }
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "法茶第4回合买一个任意_副本4": {
+    "$__mpe_code": {
+      "position": {
+        "x": 3812,
+        "y": 114
+      }
+    },
+    "action": {
+      "param": {
+        "begin": true,
+        "begin_offset": [
+          0,
+          100,
+          0,
+          0
+        ],
+        "end": [
+          [
+            642,
+            659,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "第一回合买一个一星"
+    },
+    "next": [
+      "法茶第一回合上_副本6"
+    ],
+    "post_delay": 400,
+    "recognition": {
+      "param": {
+        "template": [
+          "3星.png",
+          "2星.png",
+          "1星.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶第4回合买一个任意_副本4_副本7": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4452,
+        "y": 114
+      }
+    },
+    "action": {
+      "param": {
+        "begin": true,
+        "begin_offset": [
+          0,
+          100,
+          0,
+          0
+        ],
+        "end": [
+          [
+            642,
+            659,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "第一回合买一个一星"
+    },
+    "next": [
+      "法茶第一回合上_副本6_副本8"
+    ],
+    "post_delay": 400,
+    "recognition": {
+      "param": {
+        "template": [
+          "3星.png",
+          "2星.png",
+          "1星.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶第一回合上": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1634,
+        "y": 89
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          623,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            632,
+            405,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      "法茶战斗中1"
+    ],
+    "post_delay": 1000,
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 200000
+  },
+  "法茶第一回合上_副本6": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4140,
+        "y": 127
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          623,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            632,
+            405,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      "法茶第4回合买一个任意_副本4_副本7"
+    ],
+    "post_delay": 1000,
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 200000
+  },
+  "法茶第一回合上_副本6_副本8": {
+    "$__mpe_code": {
+      "position": {
+        "x": 4750,
+        "y": 131
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          623,
+          664,
+          0,
+          0
+        ],
+        "end": [
+          [
+            632,
+            405,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "随机上随从"
+    },
+    "next": [
+      "法茶战斗中2_副本3_副本9"
+    ],
+    "post_delay": 1000,
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    },
+    "timeout": 200000
+  },
+  "法茶第一回合买一个一星": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1350,
+        "y": 62
+      }
+    },
+    "action": {
+      "param": {
+        "begin": true,
+        "begin_offset": [
+          0,
+          100,
+          0,
+          0
+        ],
+        "end": [
+          [
+            642,
+            659,
+            0,
+            0
+          ]
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "第一回合买一个一星"
+    },
+    "next": [
+      "法茶第一回合上"
+    ],
+    "post_delay": 400,
+    "recognition": {
+      "param": {
+        "template": [
+          "1星.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶第三回合空城卖随从": {
+    "$__mpe_code": {
+      "position": {
+        "x": 2864,
+        "y": 78
+      }
+    },
+    "action": {
+      "param": {
+        "begin": [
+          642,
+          397,
+          0,
+          0
+        ],
+        "end": [
+          true
+        ]
+      },
+      "type": "Swipe"
+    },
+    "focus": {
+      "Node.Action.Starting": "卖随从"
+    },
+    "next": [
+      "法茶点升级_副本2"
+    ],
+    "pre_delay": 5000,
+    "recognition": {
+      "param": {
+        "template": [
+          "鲍勃.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶进入对局": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1196,
+        "y": 557
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "我的回合"
+    },
+    "next": [
+      "法茶第一回合买一个一星"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "鲍勃.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 300000
+  },
+  "法茶进游戏点击开始": {
+    "$__mpe_code": {
+      "position": {
+        "x": 300,
+        "y": 280
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "点击开始游戏"
+    },
+    "recognition": {
+      "param": {
+        "template": [
+          "点击开始.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶进行选择": {
+    "$__mpe_code": {
+      "position": {
+        "x": 1543,
+        "y": 921
+      }
+    },
+    "action": {
+      "param": {
+        "target": [
+          640,
+          365,
+          0,
+          0
+        ]
+      },
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "进行选择"
+    },
+    "recognition": {
+      "param": {
+        "template": [
+          "进行选择.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  },
+  "法茶选择英雄": {
+    "$__mpe_code": {
+      "position": {
+        "x": 908,
+        "y": 677
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "next": [
+      "法茶进入对局"
+    ],
+    "recognition": {
+      "param": {
+        "template": [
+          "选择一个英雄.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    },
+    "timeout": 200000
+  },
+  "法茶重启游戏": {
+    "$__mpe_code": {
+      "position": {
+        "x": 290,
+        "y": 1050
+      }
+    },
+    "action": {
+      "param": {
+        "package": "com.blizzard.wtcg.hearthstone"
+      },
+      "type": "StopApp"
+    },
+    "focus": {
+      "Node.Action.Starting": "开始重启游戏"
+    },
+    "next": [
+      "法茶重启游戏2"
+    ],
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "法茶重启游戏2": {
+    "$__mpe_code": {
+      "position": {
+        "x": 561,
+        "y": 1040
+      }
+    },
+    "action": {
+      "param": {
+        "package": "com.blizzard.wtcg.hearthstone"
+      },
+      "type": "StartApp"
+    },
+    "focus": {
+      "Node.Action.Starting": "重启游戏中"
+    },
+    "post_delay": 10000,
+    "recognition": {
+      "param": {},
+      "type": "DirectHit"
+    }
+  },
+  "法茶重新连接": {
+    "$__mpe_code": {
+      "position": {
+        "x": 296,
+        "y": 806
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "focus": {
+      "Node.Action.Starting": "重新连接中"
+    },
+    "post_delay": 1000,
+    "recognition": {
+      "param": {
+        "template": [
+          "重新连接.png"
+        ]
+      },
+      "type": "TemplateMatch"
+    }
+  }
+}

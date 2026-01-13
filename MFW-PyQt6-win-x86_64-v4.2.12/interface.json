@@ -1,0 +1,68 @@
+{
+
+    "interface_version": 2,
+    "name": "MaaXXX",
+    "description": "这是一个使用 MaaFramework 创建的新项目。",
+    "contact": "QQ群: 123456789",
+    "license": "MIT",
+    "welcome": "首次使用！欢迎使用 MAA!",
+
+    "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
+    "version": "1.0.0",
+
+    "controller": [
+        {
+            "name": "安卓端",
+            "type": "Adb",
+            "display_short_side": 720 
+        },
+        {
+            "name": "桌面端",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "Visual Studio",
+                
+                "screencap": "PrintWindow", 
+                "mouse": "PostMessageWithCursorPos", 
+                "keyboard": "PostMessageWithCursorPos" 
+            }
+        }
+    ],
+    "resource": [
+        {
+            "name": "官服",
+            "path": [
+                "../assets/resource"
+            ]
+        }
+    ],
+    "task": [
+        {
+            "name": "普通任务",
+            "entry": "状态机1"
+        }
+    ],
+    "option": {
+        "任务选项1": {
+            "cases": [
+                {
+                    "name": "文本1",
+                    "pipeline_override": {
+                        "OcrTask": {
+                            "text": "文本1"
+                        }
+                    }
+                },
+                {
+                    "name": "文本2",
+                    "pipeline_override": {
+                        "OcrTask": {
+                            "text": "文本2"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
