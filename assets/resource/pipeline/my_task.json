@@ -3,11 +3,11 @@
     "$__mpe_code": {
       "filePath": "G:\\github_File\\MAAHearthStone\\assets\\resource\\pipeline\\my_task.json",
       "filename": "新建Pipeline3",
-      "lastSyncTime": 1768291892484,
+      "lastSyncTime": 1768296931670,
       "prefix": "",
       "savedViewport": {
-        "x": 174,
-        "y": -463,
+        "x": 539,
+        "y": -5,
         "zoom": 0.5
       },
       "version": "v0.15.2"
@@ -313,6 +313,26 @@
       "type": "TemplateMatch"
     },
     "timeout": 200000
+  },
+  "新建节点1": {
+    "$__mpe_code": {
+      "position": {
+        "x": 910,
+        "y": 840
+      }
+    },
+    "action": {
+      "param": {},
+      "type": "Click"
+    },
+    "recognition": {
+      "param": {
+        "expected": [
+          "正在"
+        ]
+      },
+      "type": "OCR"
+    }
   },
   "新建节点11": {
     "$__mpe_code": {
@@ -1150,7 +1170,10 @@
           "馆长",
           "雷矛",
           "奥拉基尔",
-          "德雷克塔尔"
+          "德雷克塔尔",
+          "炎魔之王",
+          "死亡之翼",
+          "洛卡拉"
         ],
         "roi": [
           444,
@@ -1232,11 +1255,15 @@
     "focus": {
       "Node.Action.Starting": "重启游戏中"
     },
-    "post_delay": 10000,
+    "next": [
+      "新建节点1"
+    ],
+    "post_delay": 15000,
     "recognition": {
       "param": {},
       "type": "DirectHit"
-    }
+    },
+    "timeout": 60000
   },
   "重新连接": {
     "$__mpe_code": {
