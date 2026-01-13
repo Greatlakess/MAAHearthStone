@@ -15,6 +15,8 @@
 
 新手上路，不见得能运行，还请多多包涵。
 
+特别声明，仅用于技术研究讨论，请勿破坏游戏规则。
+
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
 
