@@ -1,163 +1,23 @@
 {
-  "$__mpe_anchor_重定向节点1_新建Pipeline3": {
-    "$__mpe_code": {
-      "position": {
-        "x": -82,
-        "y": 443
-      }
-    }
-  },
   "$__mpe_config_新建Pipeline3": {
     "$__mpe_code": {
       "filePath": "G:\\github_File\\MAAHearthStone\\assets\\resource\\pipeline\\my_task.json",
       "filename": "新建Pipeline3",
-      "lastSyncTime": 1768402640516,
+      "lastSyncTime": 1768384113335,
       "prefix": "",
       "savedViewport": {
-        "x": 273,
-        "y": -393,
-        "zoom": 0.4
+        "x": 362,
+        "y": -262,
+        "zoom": 0.5
       },
       "version": "v0.15.2"
-    }
-  },
-  "1级酒馆": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2071,
-        "y": 2378
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "next": [
-      "点升级_副本1_副本7_副本10"
-    ],
-    "recognition": {
-      "param": {
-        "roi": [
-          573,
-          137,
-          31,
-          26
-        ],
-        "template": [
-          "酒馆1星.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "1级酒馆_副本15": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1920,
-        "y": 3544
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "next": [
-      "点升级_副本1_副本7_副本10_副本18"
-    ],
-    "recognition": {
-      "param": {
-        "roi": [
-          573,
-          137,
-          31,
-          26
-        ],
-        "template": [
-          "酒馆1星.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "买冰球火球": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2265,
-        "y": 4138
-      }
-    },
-    "action": {
-      "param": {
-        "end": [
-          [
-            637,
-            672,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "next": [
-      "没钱了_副本23_副本41",
-      "刷新_副本40"
-    ],
-    "recognition": {
-      "param": {
-        "roi": [
-          271,
-          208,
-          725,
-          118
-        ],
-        "template": [
-          "随从/冰球.png",
-          "随从/火球.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "买机械随从": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2413,
-        "y": 2646
-      }
-    },
-    "action": {
-      "param": {
-        "end": [
-          [
-            637,
-            672,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "recognition": {
-      "param": {
-        "template": [
-          "随从/机械拔线机.png",
-          "随从/机械蓝色.png",
-          "随从/机械红色.png",
-          "随从/机械吵吵.png",
-          "随从/机械绿色.png",
-          "随从/机械侏儒.png"
-        ]
-      },
-      "type": "TemplateMatch"
     }
   },
   "买法术": {
     "$__mpe_code": {
       "position": {
-        "x": 1846,
-        "y": 320
+        "x": 1856,
+        "y": 304
       }
     },
     "action": {
@@ -272,139 +132,11 @@
       "type": "TemplateMatch"
     }
   },
-  "优先升级_副本4": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2630,
-        "y": 2043
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          526,
-          140,
-          0,
-          0
-        ]
-      },
-      "type": "TouchDown"
-    },
-    "next": [
-      "新建节点11_副本6"
-    ],
-    "post_delay": 0,
-    "pre_delay": 0,
-    "recognition": {
-      "param": {
-        "template": [
-          "升级.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "优先升级_副本4_副本11": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2478,
-        "y": 3194
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          526,
-          140,
-          0,
-          0
-        ]
-      },
-      "type": "TouchDown"
-    },
-    "next": [
-      "新建节点11_副本6_副本13"
-    ],
-    "post_delay": 0,
-    "pre_delay": 0,
-    "recognition": {
-      "param": {
-        "template": [
-          "升级.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "优先升级_副本4_副本8": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2681,
-        "y": 2353
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          526,
-          140,
-          0,
-          0
-        ]
-      },
-      "type": "TouchDown"
-    },
-    "next": [
-      "新建节点11_副本6_副本9"
-    ],
-    "post_delay": 0,
-    "pre_delay": 0,
-    "recognition": {
-      "param": {
-        "template": [
-          "升级.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "优先升级_副本4_副本8_副本16": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2517,
-        "y": 3500
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          526,
-          140,
-          0,
-          0
-        ]
-      },
-      "type": "TouchDown"
-    },
-    "next": [
-      "新建节点11_副本6_副本9_副本17"
-    ],
-    "post_delay": 0,
-    "pre_delay": 0,
-    "recognition": {
-      "param": {
-        "template": [
-          "升级.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
   "刷新": {
     "$__mpe_code": {
       "position": {
-        "x": 1854,
-        "y": 22
+        "x": 1867,
+        "y": 48
       }
     },
     "action": {
@@ -416,40 +148,7 @@
       "没钱了_副本23",
       "刷新"
     ],
-    "post_wait_freezes": 1000,
-    "recognition": {
-      "param": {
-        "roi": [
-          705,
-          86,
-          92,
-          101
-        ],
-        "template": [
-          "刷新.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    },
-    "timeout": 3000
-  },
-  "刷新_副本40": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2264,
-        "y": 4364
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "next": [
-      "买冰球火球",
-      "没钱了_副本23_副本41",
-      "刷新_副本40"
-    ],
-    "post_wait_freezes": 1000,
+    "post_delay": 1500,
     "recognition": {
       "param": {
         "roi": [
@@ -500,105 +199,6 @@
       "type": "DirectHit"
     }
   },
-  "卖一个随从_副本30": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3610,
-        "y": 4199
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          919,
-          392,
-          0,
-          0
-        ],
-        "end": [
-          [
-            637,
-            131,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "next": [
-      "随机上_副本3_副本1_副本31"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "卖一个随从_副本30_副本36": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2922,
-        "y": 4791
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          919,
-          392,
-          0,
-          0
-        ],
-        "end": [
-          [
-            637,
-            131,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "next": [
-      "随机上_副本3_副本23_副本33"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "各种弹出消息": {
-    "$__mpe_code": {
-      "position": {
-        "x": 311,
-        "y": 1358
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "recognition": {
-      "param": {
-        "expected": [
-          "等级",
-          "任务",
-          "奖励",
-          "公告",
-          "更新",
-          "确认"
-        ],
-        "roi": [
-          380,
-          51,
-          498,
-          612
-        ]
-      },
-      "type": "OCR"
-    }
-  },
   "四费回合": {
     "$__mpe_code": {
       "position": {
@@ -631,70 +231,6 @@
       "type": "OCR"
     }
   },
-  "四费回合_副本5": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2033,
-        "y": 2087
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "focus": {
-      "Node.Action.Starting": "四费的回合"
-    },
-    "next": [
-      "点升级_副本1_副本7"
-    ],
-    "recognition": {
-      "param": {
-        "expected": [
-          "4/4"
-        ],
-        "roi": [
-          819,
-          657,
-          42,
-          20
-        ]
-      },
-      "type": "OCR"
-    }
-  },
-  "四费回合_副本5_副本12": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1912,
-        "y": 3251
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "focus": {
-      "Node.Action.Starting": "四费的回合"
-    },
-    "next": [
-      "点升级_副本1_副本7_副本14"
-    ],
-    "recognition": {
-      "param": {
-        "expected": [
-          "4/4"
-        ],
-        "roi": [
-          819,
-          657,
-          42,
-          20
-        ]
-      },
-      "type": "OCR"
-    }
-  },
   "战斗中": {
     "$__mpe_code": {
       "position": {
@@ -709,31 +245,7 @@
     "focus": {
       "Node.Recognition.Succeeded": "不是我的回合"
     },
-    "post_wait_freezes": 1000,
-    "recognition": {
-      "param": {
-        "template": [
-          "战斗中.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "战斗中_副本39": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1915,
-        "y": 5015
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "不是我的回合"
-    },
-    "post_wait_freezes": 1000,
+    "post_delay": 10000,
     "recognition": {
       "param": {
         "template": [
@@ -758,10 +270,10 @@
       "Node.Action.Starting": "开始匹配"
     },
     "next": [
-      "时间太长",
       "进入对局",
       "搜寻对手",
-      "选择英雄"
+      "选择英雄",
+      "时间太长"
     ],
     "rate_limit": 3000,
     "recognition": {
@@ -814,8 +326,8 @@
   "新建节点11_副本26": {
     "$__mpe_code": {
       "position": {
-        "x": 4609,
-        "y": 656
+        "x": 4579,
+        "y": 786
       }
     },
     "action": {
@@ -826,94 +338,6 @@
       "param": {},
       "type": "DirectHit"
     }
-  },
-  "新建节点11_副本6": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2928,
-        "y": 2095
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "TouchUp"
-    },
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "新建节点11_副本6_副本13": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2776,
-        "y": 3247
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "TouchUp"
-    },
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "新建节点11_副本6_副本9": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2973,
-        "y": 2398
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "TouchUp"
-    },
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "新建节点11_副本6_副本9_副本17": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2808,
-        "y": 3549
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "TouchUp"
-    },
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "新建节点2": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1886,
-        "y": 1866
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "next": [
-      "新建节点2"
-    ],
-    "recognition": {
-      "param": {
-        "expected": [
-          "玩家已就绪"
-        ]
-      },
-      "type": "OCR"
-    },
-    "timeout": 2000
   },
   "新建节点6": {
     "$__mpe_code": {
@@ -926,9 +350,6 @@
       "param": {},
       "type": "Click"
     },
-    "next": [
-      "新建节点2"
-    ],
     "recognition": {
       "param": {
         "expected": [
@@ -942,14 +363,13 @@
         ]
       },
       "type": "OCR"
-    },
-    "timeout": 20000
+    }
   },
   "新点抉择": {
     "$__mpe_code": {
       "position": {
-        "x": 3638,
-        "y": 654
+        "x": 3622,
+        "y": 552
       }
     },
     "action": {
@@ -1129,26 +549,6 @@
       "type": "TemplateMatch"
     }
   },
-  "新点抉择_副本21": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3719,
-        "y": 3923
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "recognition": {
-      "param": {
-        "template": [
-          "抉择的0.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
   "时光酒馆": {
     "$__mpe_code": {
       "position": {
@@ -1175,37 +575,11 @@
       "type": "TemplateMatch"
     }
   },
-  "时光酒馆_副本28": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1907,
-        "y": 4771
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "focus": {
-      "Node.Action.Starting": "时光酒馆回合"
-    },
-    "next": [
-      "随机买_副本5_副本25_副本34"
-    ],
-    "recognition": {
-      "param": {
-        "template": [
-          "时光龙.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
   "时间太长": {
     "$__mpe_code": {
       "position": {
-        "x": 923,
-        "y": 1405
+        "x": 919,
+        "y": 1449
       }
     },
     "action": {
@@ -1225,64 +599,6 @@
           661,
           69,
           22
-        ]
-      },
-      "type": "OCR"
-    }
-  },
-  "有元素的对局": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1264,
-        "y": 3326
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "next": [
-      "进入元素对局"
-    ],
-    "recognition": {
-      "param": {
-        "expected": [
-          "元素"
-        ],
-        "roi": [
-          509,
-          105,
-          265,
-          33
-        ]
-      },
-      "type": "OCR"
-    }
-  },
-  "有机械的对局": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1260,
-        "y": 2426
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "next": [
-      "进入机械对局"
-    ],
-    "recognition": {
-      "param": {
-        "expected": [
-          "机械"
-        ],
-        "roi": [
-          509,
-          105,
-          265,
-          33
         ]
       },
       "type": "OCR"
@@ -1363,55 +679,11 @@
     },
     "timeout": 3000
   },
-  "没钱了_副本23_副本41": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2687,
-        "y": 4137
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "没钱了"
-    },
-    "inverse": true,
-    "next": [
-      "随机上_副本3_副本13_副本43"
-    ],
-    "recognition": {
-      "param": {
-        "expected": [
-          "10",
-          "9",
-          "8",
-          "7",
-          "6",
-          "5",
-          "4",
-          "3",
-          "2",
-          "1"
-        ],
-        "only_rec": true,
-        "roi": [
-          819,
-          660,
-          21,
-          15
-        ]
-      },
-      "type": "OCR"
-    },
-    "timeout": 3000
-  },
   "游戏结束": {
     "$__mpe_code": {
       "position": {
-        "x": 1671,
-        "y": 1251
+        "x": 1505,
+        "y": 1244
       }
     },
     "action": {
@@ -1421,9 +693,6 @@
     "focus": {
       "Node.Action.Starting": "完成1局"
     },
-    "next": [
-      "状态机1"
-    ],
     "recognition": {
       "param": {
         "template": [
@@ -1546,122 +815,6 @@
       "type": "DirectHit"
     }
   },
-  "点升级_副本1_副本7": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2348,
-        "y": 2076
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          528,
-          137,
-          0,
-          0
-        ]
-      },
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Action.Starting": "尝试升级"
-    },
-    "next": [
-      "优先升级_副本4"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "点升级_副本1_副本7_副本10": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2406,
-        "y": 2371
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          528,
-          137,
-          0,
-          0
-        ]
-      },
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Action.Starting": "尝试升级"
-    },
-    "next": [
-      "优先升级_副本4_副本8"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "点升级_副本1_副本7_副本10_副本18": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2214,
-        "y": 3522
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          528,
-          137,
-          0,
-          0
-        ]
-      },
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Action.Starting": "尝试升级"
-    },
-    "next": [
-      "优先升级_副本4_副本8_副本16"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "点升级_副本1_副本7_副本14": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2201,
-        "y": 3231
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          528,
-          137,
-          0,
-          0
-        ]
-      },
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Action.Starting": "尝试升级"
-    },
-    "next": [
-      "优先升级_副本4_副本11"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
   "点升级_副本24": {
     "$__mpe_code": {
       "position": {
@@ -1691,8 +844,8 @@
   "点取消": {
     "$__mpe_code": {
       "position": {
-        "x": 1234,
-        "y": 1450
+        "x": 1209,
+        "y": 1437
       }
     },
     "action": {
@@ -1717,8 +870,8 @@
   "点抉择": {
     "$__mpe_code": {
       "position": {
-        "x": 2989,
-        "y": 664
+        "x": 2963,
+        "y": 534
       }
     },
     "action": {
@@ -1728,69 +881,6 @@
     "next": [
       "随机上2_副本4"
     ],
-    "recognition": {
-      "param": {
-        "template": [
-          "抉择的0.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "点抉择_副本21": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3087,
-        "y": 3925
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "next": [
-      "随机上2_副本4_副本22"
-    ],
-    "recognition": {
-      "param": {
-        "template": [
-          "抉择的0.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "点抉择_副本21_副本32": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3542,
-        "y": 4846
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "recognition": {
-      "param": {
-        "template": [
-          "抉择的0.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "点抉择_副本21_副本32_副本37": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2944,
-        "y": 5154
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
     "recognition": {
       "param": {
         "template": [
@@ -1837,9 +927,6 @@
       "param": {},
       "type": "DoNothing"
     },
-    "anchor": [
-      "重定向节点1"
-    ],
     "focus": {
       "Node.Action.Starting": "识别状态中",
       "Node.Recognition.Starting": "程序开始"
@@ -1851,7 +938,7 @@
       },
       {
         "jump_back": true,
-        "name": "各种弹出消息"
+        "name": "等级奖励"
       },
       {
         "jump_back": true,
@@ -1909,63 +996,31 @@
       "type": "DirectHit"
     }
   },
-  "进入元素对局": {
+  "等级奖励": {
     "$__mpe_code": {
       "position": {
-        "x": 1581,
-        "y": 3316
+        "x": 311,
+        "y": 1358
       }
     },
     "action": {
       "param": {},
-      "type": "DoNothing"
+      "type": "Click"
     },
-    "anchor": [
-      "重定向节点1"
-    ],
-    "focus": {
-      "Node.Action.Starting": "我的回合（元素流）"
-    },
-    "next": [
-      {
-        "jump_back": true,
-        "name": "进行选择_副本44"
-      },
-      {
-        "jump_back": true,
-        "name": "四费回合_副本5_副本12"
-      },
-      {
-        "jump_back": true,
-        "name": "1级酒馆_副本15"
-      },
-      {
-        "jump_back": true,
-        "name": "时光酒馆_副本28"
-      },
-      {
-        "jump_back": true,
-        "name": "战斗中_副本39"
-      },
-      {
-        "jump_back": true,
-        "name": "随从没满_元素"
-      },
-      {
-        "jump_back": true,
-        "name": "随从满了_元素"
-      },
-      "游戏结束"
-    ],
     "recognition": {
       "param": {
-        "template": [
-          "鲍勃.png"
+        "expected": [
+          "等级"
+        ],
+        "roi": [
+          434,
+          61,
+          154,
+          78
         ]
       },
-      "type": "TemplateMatch"
-    },
-    "timeout": 30000
+      "type": "OCR"
+    }
   },
   "进入对局": {
     "$__mpe_code": {
@@ -1988,35 +1043,6 @@
       "随从没满",
       "随从满了",
       "战斗中"
-    ],
-    "recognition": {
-      "param": {
-        "template": [
-          "鲍勃.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    },
-    "timeout": 30000
-  },
-  "进入机械对局": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1634,
-        "y": 2382
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "DoNothing"
-    },
-    "focus": {
-      "Node.Action.Starting": "我的回合（机械流）"
-    },
-    "next": [
-      "游戏结束",
-      "四费回合_副本5",
-      "1级酒馆"
     ],
     "recognition": {
       "param": {
@@ -2055,15 +1081,15 @@
   "进行选择": {
     "$__mpe_code": {
       "position": {
-        "x": 1545,
-        "y": 1531
+        "x": 1514,
+        "y": 1529
       }
     },
     "action": {
       "param": {
         "target": [
-          553,
-          310,
+          640,
+          365,
           0,
           0
         ]
@@ -2075,50 +1101,18 @@
     },
     "recognition": {
       "param": {
-        "expected": [
-          "进行选择",
-          "抉择"
+        "template": [
+          "进行选择.png"
         ]
       },
-      "type": "OCR"
-    }
-  },
-  "进行选择_副本44": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1897,
-        "y": 5296
-      }
-    },
-    "action": {
-      "param": {
-        "target": [
-          553,
-          310,
-          0,
-          0
-        ]
-      },
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Action.Starting": "进行选择"
-    },
-    "recognition": {
-      "param": {
-        "expected": [
-          "进行选择",
-          "抉择"
-        ]
-      },
-      "type": "OCR"
+      "type": "TemplateMatch"
     }
   },
   "选择强力英雄": {
     "$__mpe_code": {
       "position": {
-        "x": 1299,
-        "y": 1803
+        "x": 1213,
+        "y": 1801
       }
     },
     "action": {
@@ -2178,9 +1172,6 @@
     "action": {
       "param": {},
       "type": "Click"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "匹配成功"
     },
     "next": [
       "进入对局",
@@ -2277,8 +1268,8 @@
   "错误发生": {
     "$__mpe_code": {
       "position": {
-        "x": 312,
-        "y": 1582
+        "x": 317,
+        "y": 1579
       }
     },
     "action": {
@@ -2329,70 +1320,6 @@
       "type": "TemplateMatch"
     }
   },
-  "随从没满_元素": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1921,
-        "y": 3794
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "检测到随从没满"
-    },
-    "next": [
-      "随机买_副本5_副本25"
-    ],
-    "recognition": {
-      "param": {
-        "roi": [
-          872,
-          333,
-          93,
-          116
-        ],
-        "template": [
-          "第七个随从格子.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "随从没满_机械": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2073,
-        "y": 2589
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "检测到随从没满"
-    },
-    "next": [
-      "买机械随从"
-    ],
-    "recognition": {
-      "param": {
-        "roi": [
-          872,
-          333,
-          93,
-          116
-        ],
-        "template": [
-          "第七个随从格子.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
   "随从满了": {
     "$__mpe_code": {
       "position": {
@@ -2412,106 +1339,9 @@
       "买法术",
       "刷新"
     ],
-    "recognition": {
-      "param": {
-        "roi": [
-          872,
-          333,
-          93,
-          116
-        ],
-        "template": [
-          "第七个随从格子.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    },
-    "timeout": 5000
-  },
-  "随从满了_元素": {
-    "$__mpe_code": {
-      "position": {
-        "x": 1916,
-        "y": 4079
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "检测到随从满了"
-    },
-    "inverse": true,
-    "next": [
-      "买冰球火球",
-      "刷新_副本40"
+    "on_error": [
+      "状态机1"
     ],
-    "recognition": {
-      "param": {
-        "roi": [
-          872,
-          333,
-          93,
-          116
-        ],
-        "template": [
-          "第七个随从格子.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    },
-    "timeout": 5000
-  },
-  "随从满了_元素_副本35": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2630,
-        "y": 4754
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "检测到随从满了"
-    },
-    "inverse": true,
-    "next": [
-      "卖一个随从_副本30_副本36"
-    ],
-    "recognition": {
-      "param": {
-        "roi": [
-          872,
-          333,
-          93,
-          116
-        ],
-        "template": [
-          "第七个随从格子.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    },
-    "timeout": 5000
-  },
-  "随从满了_机械": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2062,
-        "y": 2877
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "focus": {
-      "Node.Recognition.Succeeded": "检测到随从满了"
-    },
-    "inverse": true,
     "recognition": {
       "param": {
         "roi": [
@@ -2541,35 +1371,6 @@
     },
     "next": [
       "卖一个随从"
-    ],
-    "recognition": {
-      "param": {
-        "expected": [
-          "更多"
-        ],
-        "roi": [
-          638,
-          303,
-          57,
-          32
-        ]
-      },
-      "type": "OCR"
-    }
-  },
-  "随从满了，且手牌还有随从_副本42": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3319,
-        "y": 4214
-      }
-    },
-    "action": {
-      "param": {},
-      "type": "Click"
-    },
-    "next": [
-      "卖一个随从_副本30"
     ],
     "recognition": {
       "param": {
@@ -2833,41 +1634,6 @@
     },
     "timeout": 2000
   },
-  "随机上2_副本4_副本22": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3378,
-        "y": 3771
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          634,
-          662,
-          0,
-          0
-        ],
-        "end": [
-          [
-            588,
-            397,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "next": [
-      "新点抉择_副本21"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    },
-    "timeout": 2000
-  },
   "随机上_副本3": {
     "$__mpe_code": {
       "position": {
@@ -3103,194 +1869,6 @@
     },
     "timeout": 2000
   },
-  "随机上_副本3_副本13_副本43": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3034,
-        "y": 4168
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          623,
-          664,
-          0,
-          0
-        ],
-        "end": [
-          [
-            907,
-            373,
-            70,
-            56
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "focus": {
-      "Node.Action.Starting": "随机上随从"
-    },
-    "next": [
-      "随从满了，且手牌还有随从_副本42"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    },
-    "timeout": 2000
-  },
-  "随机上_副本3_副本1_副本31": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3912,
-        "y": 4110
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          623,
-          664,
-          0,
-          0
-        ],
-        "end": [
-          [
-            913,
-            392,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "focus": {
-      "Node.Action.Starting": "上冰火球"
-    },
-    "post_delay": 2000,
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
-  "随机上_副本3_副本23": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2782,
-        "y": 3796
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          623,
-          664,
-          0,
-          0
-        ],
-        "end": [
-          [
-            559,
-            373,
-            159,
-            35
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "focus": {
-      "Node.Action.Starting": "随机上随从"
-    },
-    "next": [
-      "点抉择_副本21",
-      "随机上2_副本4_副本22"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    },
-    "timeout": 2000
-  },
-  "随机上_副本3_副本23_副本33": {
-    "$__mpe_code": {
-      "position": {
-        "x": 3228,
-        "y": 4781
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          623,
-          664,
-          0,
-          0
-        ],
-        "end": [
-          [
-            276,
-            388,
-            51,
-            46
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "focus": {
-      "Node.Action.Starting": "随机上随从"
-    },
-    "next": [
-      "点抉择_副本21_副本32"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    },
-    "timeout": 2000
-  },
-  "随机上_副本3_副本23_副本33_副本38": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2631,
-        "y": 5088
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          623,
-          664,
-          0,
-          0
-        ],
-        "end": [
-          [
-            276,
-            388,
-            51,
-            46
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "focus": {
-      "Node.Action.Starting": "随机上随从"
-    },
-    "next": [
-      "点抉择_副本21_副本32_副本37"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    },
-    "timeout": 2000
-  },
   "随机买": {
     "$__mpe_code": {
       "position": {
@@ -3401,40 +1979,6 @@
       "type": "DirectHit"
     }
   },
-  "随机买2_副本6_副本24": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2492,
-        "y": 3883
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          545,
-          266,
-          0,
-          0
-        ],
-        "end": [
-          [
-            624,
-            659,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "next": [
-      "随机上_副本3_副本23"
-    ],
-    "recognition": {
-      "param": {},
-      "type": "DirectHit"
-    }
-  },
   "随机买_副本5": {
     "$__mpe_code": {
       "position": {
@@ -3467,92 +2011,6 @@
     "next": [
       "随机买2_副本6"
     ],
-    "recognition": {
-      "param": {
-        "template": [
-          "鲍勃.png",
-          "时光龙.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "随机买_副本5_副本25": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2210,
-        "y": 3787
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          593,
-          266,
-          0,
-          0
-        ],
-        "end": [
-          [
-            642,
-            659,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "focus": {
-      "Node.Action.Starting": "随机买随从"
-    },
-    "next": [
-      "随机买2_副本6_副本24"
-    ],
-    "recognition": {
-      "param": {
-        "template": [
-          "鲍勃.png",
-          "时光龙.png"
-        ]
-      },
-      "type": "TemplateMatch"
-    }
-  },
-  "随机买_副本5_副本25_副本34": {
-    "$__mpe_code": {
-      "position": {
-        "x": 2242,
-        "y": 4758
-      }
-    },
-    "action": {
-      "param": {
-        "begin": [
-          418,
-          254,
-          149,
-          23
-        ],
-        "end": [
-          [
-            642,
-            659,
-            0,
-            0
-          ]
-        ]
-      },
-      "type": "Swipe"
-    },
-    "focus": {
-      "Node.Action.Starting": "随机买随从"
-    },
-    "next": [
-      "随从满了_元素_副本35",
-      "随机上_副本3_副本23_副本33_副本38"
-    ],
-    "post_delay": 3000,
     "recognition": {
       "param": {
         "template": [

@@ -3,13 +3,57 @@
         "rate_limit": 1000,
         "timeout": 20000,
         "pre_delay": 200,
-        "on_error":"状态机1"
+        "on_error":[
+      {
+        "anchor": true,
+        "name": "重定向节点1"
+      }
+    ]
     },
     "TemplateMatch": { 
         "recognition": { "type": "TemplateMatch", "param": { "threshold": 0.7 } }
     },
     "Click": {
         
-        "action": { "type": "Click", "param": { "target": true } }
+        "action": { "type": "Click", "param": { "target": true } },
+        "target_offset": [
+          -15,
+          -15,
+          30,
+          30
+        ]
+    },
+    "Swipe":{
+        "action":"Swipe",
+        "begin_offset":[
+          -15,
+          -15,
+          30,
+          30
+        ],
+        "end_offset":[
+          -15,
+          -15,
+          30,
+          30
+        ]
+    },
+    "TouchDown":{
+        "action":"TouchDown",
+        "target_offset": [
+          -15,
+          -15,
+          30,
+          30
+        ]
+    },
+    "TouchUp":{
+        "action":"TouchUp",
+        "target_offset": [
+          -15,
+          -15,
+          30,
+          30
+        ]
     }
 }

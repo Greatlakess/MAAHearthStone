@@ -1,0 +1,83 @@
+{
+  "$__mpe_config_新建Pipeline2": {
+    "$__mpe_code": {
+      "prefix": "",
+      "savedViewport": {
+        "x": -3426,
+        "y": -306,
+        "zoom": 0.87
+      },
+      "filename": "新建Pipeline2",
+      "version": "v0.15.2"
+    }
+  },
+  "测试1": {
+    "recognition": {
+      "type": "DirectHit",
+      "param": {}
+    },
+    "action": {
+      "type": "DoNothing",
+      "param": {}
+    },
+    "$__mpe_code": {
+      "position": {
+        "x": 4735,
+        "y": 834
+      }
+    },
+    "next": [
+      "测试2",
+      "测试3",
+      "测试4"
+    ]
+  },
+  "测试2": {
+    "recognition": {
+      "type": "DirectHit",
+      "param": {}
+    },
+    "action": {
+      "type": "DoNothing",
+      "param": {}
+    },
+    "$__mpe_code": {
+      "position": {
+        "x": 5065,
+        "y": 545
+      }
+    }
+  },
+  "测试3": {
+    "recognition": {
+      "type": "DirectHit",
+      "param": {}
+    },
+    "action": {
+      "type": "DoNothing",
+      "param": {}
+    },
+    "$__mpe_code": {
+      "position": {
+        "x": 5053,
+        "y": 815
+      }
+    }
+  },
+  "测试4": {
+    "recognition": {
+      "type": "DirectHit",
+      "param": {}
+    },
+    "action": {
+      "type": "DoNothing",
+      "param": {}
+    },
+    "$__mpe_code": {
+      "position": {
+        "x": 5051,
+        "y": 1060
+      }
+    }
+  }
+}
